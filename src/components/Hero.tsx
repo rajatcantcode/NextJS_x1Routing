@@ -18,6 +18,8 @@ export default function Hero(props: heroProps) {
             layout="fill"
             objectFit="cover"
           />
+
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 opacity-90 z-10"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div className="text-9xl text-zinc-300">{props.title}</div>
