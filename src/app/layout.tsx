@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+// @ - is a shortcut provided by the Next js restart our route with src/
+import Unnecessary from "@/components/Unncessary";
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,9 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-screen w-full">
+      <body>
+        <Unnecessary />
         <Navbar />
-        <div className="flex items-center justify-center">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );
